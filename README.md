@@ -12,10 +12,25 @@ A empresa tem como objetivo ajudar as pessoas que têm muitas dificudades da par
 | Personas | [docs/personas.md](docs/personas.md) |
 | Entrevistas | [docs/entrevistas.md](docs/entrevistas.md) |
 
-### Fase 2: Definicao
+### Fase 2: Definição
+| Artefato | Arquivo |
+| :--- | :--- |
+| Histórias de Usuário | [docs/historias.md](docs/historias.md) |
+| Mapa da História | [docs/story-map.md](docs/story-map.md) |
+| Validação do Protótipo | [docs/validacao-prototipo.md](docs/validacao-prototipo.md) |
 
 ### Fase 3: Decisão Tecnica
+| Artefato | Arquivo |
+| :--- | :--- |
+| ADR 001: Escolha de Stack | [docs/adr/001-escolha-de-stack.md](docs/adr/001/escolha-de-stack.md) |
+| ADR 002: Banco de Dados | [docs/adr/002/banco-de-dados.md](docs/002/banco-de-dados.md) |
 
-### Fase 4: Acúmulo Final 
+### Fase 4: Backlog Final 
+| Artefato | Arquivo |
+| :--- | :--- |
+| Definição de Pronto | [docs/definição-de-pronto.md](docs/definição-de-pronto.md) |
+| Definição de Concluido | [docs/definição-de-concluido.md](docs/definição-de-concluido.md) |
+| Backlog de exemplo(campos do board) | [docs/backlog-exemplo.md](docs/backlog-exempleto.md) |
+| ? | [?](d?) |
 
 ### Estrutura do
