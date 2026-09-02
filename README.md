@@ -31,6 +31,38 @@ A empresa tem como objetivo ajudar as pessoas que têm muitas dificudades da par
 | Definição de Pronto | [docs/definição-de-pronto.md](docs/definição-de-pronto.md) |
 | Definição de Concluido | [docs/definição-de-concluido.md](docs/definição-de-concluido.md) |
 | Backlog de exemplo(campos do board) | [docs/backlog-exemplo.md](docs/backlog-exempleto.md) |
-| ? | [?](d?) |
-
+| Projetos do GitHud | [Acessar board](https://github.com/users/guilhermetorresifpb/projects/1) |
+s
 ### Estrutura do
+```
+docs/
+  ├── visao.md                     # Documento de Visão do produto
+  ├── personas.md                  # Personas do projeto
+  ├── entrevistas.md               # Entrevistas com usuários (simuladas)
+  ├── historias.md                 # Histórias de usuário por épico
+  ├── story-map.md                 # Link para o Story Map no Miro + definição do MVP
+  ├── validacao-prototipo.md       # Resultado da validação do protótipo
+  ├── definition-of-ready.md       # Critérios de Definition of Ready
+  ├── definition-of-done.md        # Critérios de Definition of Done
+  ├── backlog-exemplo.md           # Histórias com campos do GitHub Projects preenchidos
+  └── adr/
+       ├── 001-escolha-de-stack.md # ADR sobre a stack tecnológica
+       └── 002-banco-de-dados.md   # ADR sobre o banco de dados
+README.md                          # Este arquivo
+```
+
+---
+
+## GitHub Projects
+
+O backlog do projeto está no GitHub Projects:  
+**[Acessar board](https://github.com/users/guilhermetorresifpb/projects/1)**
+
+O board usa os seguintes campos customizados:
+
+| Campo | Tipo | Valores |
+|-------|------|---------|
+| Épico | Single select | Autenticação, Publicações, Feed, Interações, Perfil, Busca |
+| MoSCoW | Single select | Must, Should, Could, Won't |
+| Size | Single select | P, M, G, GG |
+| Sprint | Iteration | Sprint 1, Sprint 2, … |
