@@ -32,7 +32,7 @@ A empresa tem como objetivo ajudar as pessoas que têm muitas dificudades da par
 | Definição de Concluido | [docs/definição-de-concluido.md](docs/definição-de-concluido.md) |
 | Backlog de exemplo(campos do board) | [docs/backlog-exemplo.md](docs/backlog-exempleto.md) |
 | Projetos do GitHud | [Acessar board](https://github.com/users/guilhermetorresifpb/projects/1) |
-s
+
 ### Estrutura do
 ```
 docs/
