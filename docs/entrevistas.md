@@ -25,17 +25,17 @@
 * **Entrevistador:** Grupo 1 (equipe Corporação Torres)
 
 ### Roteiro e Respostas
-**1. **
->. 
-
-**2. **
-> .  
-
-**3. **
-> .
-
-**4. **
+**1.Como você busca ajudar hoje quando tem dificuldades fisicas e mentais? Onde você procura? **
 > . 
 
-**5.  ** 
+**2.Você já tentou usar algum rede social ou site para encontrar médicos e profissoinais de educação fisica? Como foi essa experiência?  **
+> .  
+
+**3.O que você gostaria de pode fazer no site da Corporaçâo Torres? **
+> .
+
+**4.O que seria um problema para você no plataforma da Corporação Torres? O que te faria não usar? **
+> . 
+
+**5.Com que frequência você usaria os serviços da Corporação Torres?  ** 
 > .
