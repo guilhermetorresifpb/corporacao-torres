@@ -7,49 +7,35 @@
 
 > Link fictício: substitua pelo link real do protótipo.
 
-- **Sessões realizadas:** _(preencher, ex.: 2 sessões, com 3 participantes cada)_
-- **Perfil dos participantes:** _(preencher)_ Representantes dos três públicos definidos na [visão](visao.md):
-  - **Clientes:** pessoas que vão acessar os serviços da empresa
-  - **Pacientes:** pessoas que buscam apoio físico e mental com médicos e profissionais de educação física
-  - **Funcionários:** quem atende os pedidos de clientes e pacientes
+- **Sessões realizadas:** _preencher (ex.: 2 sessões, com 3 participantes cada)_
+- **Perfil dos participantes:** _preencher com pessoas que representem o público-alvo definido na [visão](visao.md): clientes, pacientes e funcionários_
 - **Metodologia:** teste de usabilidade com tarefas definidas + entrevista pós-teste
-- **Data da validação:** _(preencher)_
+
+---
+
+## Contexto
+
+Conforme a [visão do projeto](visao.md), a Corporação Torres terá um site em que clientes e pacientes entram em contato com a empresa, sendo direcionados ao profissional adequado (médicos e profissionais de educação física), além de links de contato dos profissionais de cada área especializada. A empresa também terá parcerias com prefeituras e academias.
+
+O protótipo foi validado com foco nesses fluxos de alto nível.
 
 ---
 
 ## Tarefas testadas
 
-As tarefas foram derivadas da seção **Alto Nível** da visão (site de contato que direciona ao profissional e links de contato por área especializada) e da seção **Impacto** (ajuda sempre que necessário e parcerias com prefeituras e academias).
-
-1. Acessar o site e entender qual é a proposta da Corporação Torres
-2. Solicitar ajuda pelo formulário de contato (como cliente ou paciente)
-3. Encontrar o profissional de uma área específica (ex.: educação física ou apoio mental)
-4. Acessar o link de contato de um profissional
-5. Encontrar as informações sobre as parcerias (prefeituras e academias)
-6. Receber e visualizar um pedido de atendimento (como funcionário)
+1. Acessar o site e entender o que a Corporação Torres oferece
+2. Escolher a área de atendimento necessária (saúde física, saúde mental ou educação física)
+3. Entrar em contato com a empresa para solicitar ajuda e ser direcionado a um profissional
+4. Encontrar o link de contato de um profissional de uma área especializada
+5. Encontrar informações sobre as parcerias com prefeituras e academias
 
 ---
 
 ## Resultados por tarefa
 
-> Preencha as tabelas com os dados reais coletados nas sessões. Não deixe resultados inventados no documento final.
+> Preencha as tabelas abaixo com os dados reais observados nas sessões de teste.
 
-### Tarefa 1: Entender a proposta do site
-
-| Participante | Concluiu? | Tempo | Dificuldades |
-| ------------ | --------- | ----- | ------------ |
-| P1           |           |       |              |
-| P2           |           |       |              |
-| P3           |           |       |              |
-| P4           |           |       |              |
-| P5           |           |       |              |
-| P6           |           |       |              |
-
-**Conclusão:** _(ex.: X de 6 explicaram corretamente o que a empresa faz após ver a página inicial.)_
-
----
-
-### Tarefa 2: Solicitar ajuda pelo formulário de contato
+### Tarefa 1: Entender a proposta da empresa
 
 | Participante | Concluiu? | Tempo | Dificuldades |
 | ------------ | --------- | ----- | ------------ |
@@ -60,68 +46,92 @@ As tarefas foram derivadas da seção **Alto Nível** da visão (site de contato
 | P5           |           |       |              |
 | P6           |           |       |              |
 
-**Conclusão:** _(preencher)_
+**Conclusão:** _escrever quantos concluíram e qual o principal problema._
 
 ---
 
-### Tarefa 3: Encontrar o profissional de uma área
+### Tarefa 2: Escolher a área de atendimento
 
-| Participante | Concluiu? | Caminho usado (menu, busca, lista) | Dificuldades |
-| ------------ | --------- | ---------------------------------- | ------------ |
-| P1           |           |                                    |              |
-| P2           |           |                                    |              |
-| P3           |           |                                    |              |
-| P4           |           |                                    |              |
-| P5           |           |                                    |              |
-| P6           |           |                                    |              |
+| Participante | Concluiu? | Tempo | Dificuldades |
+| ------------ | --------- | ----- | ------------ |
+| P1           |           |       |              |
+| P2           |           |       |              |
+| P3           |           |       |              |
+| P4           |           |       |              |
+| P5           |           |       |              |
+| P6           |           |       |              |
 
-**Conclusão:** _(preencher)_
-
----
-
-### Tarefa 4: Acessar o link de contato do profissional
-
-| Participante | Concluiu? | Dificuldades |
-| ------------ | --------- | ------------ |
-| P1           |           |              |
-| P2           |           |              |
-| P3           |           |              |
-| P4           |           |              |
-| P5           |           |              |
-| P6           |           |              |
-
-**Conclusão:** _(preencher)_
+**Conclusão:** _..._
 
 ---
 
-### Tarefa 5: Encontrar as parcerias (prefeituras e academias)
+### Tarefa 3: Solicitar contato e atendimento
 
-_(Descreva o resultado geral: quantos concluíram, como chegaram à informação e se o ponto ficou claro.)_
+| Participante | Concluiu? | Tempo | Dificuldades |
+| ------------ | --------- | ----- | ------------ |
+| P1           |           |       |              |
+| P2           |           |       |              |
+| P3           |           |       |              |
+| P4           |           |       |              |
+| P5           |           |       |              |
+| P6           |           |       |              |
+
+**Conclusão:** _..._
 
 ---
 
-### Tarefa 6: Visualizar pedido de atendimento (funcionário)
+### Tarefa 4: Encontrar o contato de um profissional
 
-_(Descreva o resultado geral com os participantes do perfil funcionário.)_
+| Participante | Concluiu? | Tempo | Dificuldades |
+| ------------ | --------- | ----- | ------------ |
+| P1           |           |       |              |
+| P2           |           |       |              |
+| P3           |           |       |              |
+| P4           |           |       |              |
+| P5           |           |       |              |
+| P6           |           |       |              |
+
+**Conclusão:** _..._
+
+---
+
+### Tarefa 5: Encontrar informações sobre parcerias
+
+| Participante | Concluiu? | Tempo | Dificuldades |
+| ------------ | --------- | ----- | ------------ |
+| P1           |           |       |              |
+| P2           |           |       |              |
+| P3           |           |       |              |
+| P4           |           |       |              |
+| P5           |           |       |              |
+| P6           |           |       |              |
+
+**Conclusão:** _..._
+
+---
+
+## Entrevista pós-teste
+
+Perguntas sugeridas para fazer a cada participante ao final:
+
+1. Com suas palavras, o que você entendeu que a Corporação Torres faz?
+2. Em algum momento você ficou em dúvida sobre o que fazer na tela?
+3. Foi claro como pedir ajuda e como seria o atendimento depois?
+4. Você confiaria neste site para buscar ajuda de um profissional de saúde ou educação física?
+5. O que você mudaria ou acrescentaria?
 
 ---
 
 ## Problemas identificados e ações tomadas
 
-| # | Problema | Severidade | Ação tomada |
-| - | -------- | ---------- | ----------- |
-| 1 | _(preencher)_ | Alta / Média / Baixa | _(preencher)_ |
-| 2 |          |            |             |
-| 3 |          |            |             |
-
-**Critério de severidade:**
-
-- **Alta:** impede a conclusão da tarefa
-- **Média:** a tarefa é concluída com dificuldade ou demora
-- **Baixa:** incômodo pontual, sem impacto na conclusão
+| # | Problema | Severidade (Alta/Média/Baixa) | Ação tomada |
+| - | -------- | ----------------------------- | ----------- |
+| 1 |          |                               |             |
+| 2 |          |                               |             |
+| 3 |          |                               |             |
 
 ---
 
 ## Conclusão geral
 
-_(Resuma a taxa de sucesso das tarefas críticas, as correções de maior impacto aplicadas no protótipo e o que ficou pendente para as próximas validações.)_
+_Resumir a taxa de sucesso nas tarefas críticas, as correções de maior impacto aplicadas e o que ficou como pendência para validações futuras (ex.: fluxos não testados por limitação de tempo)._
