@@ -2,180 +2,266 @@
 
 As histórias estão organizadas por épico. Cada história tem critérios de aceitação que definem quando ela pode ser considerada concluída.
 
+Perfis de usuário (conforme a [visão](visao.md)):
+
+- **Cliente:** pessoa que tem acesso aos serviços da empresa.
+- **Paciente:** pessoa que recebe apoio da empresa e dos parceiros.
+- **Funcionário:** pessoa da empresa que atende os pedidos de clientes e pacientes.
+
 ---
 
 ## Cadastro e Acesso
 
-### HU001: Cadastro de cliente/paciente
+### HU001: Cadastro de cliente ou paciente
 
-**Como** pessoa interessada nos serviços da empresa,
-**quero** me cadastrar no site informando meus dados básicos,
-**para** poder solicitar ajuda física ou mental.
+**Como** cliente ou paciente,  
+**quero** criar uma conta no site da Corporação Torres,  
+**para** solicitar ajuda e serviços da empresa.
 
 **Critérios de aceitação:**
 
-- O sistema solicita nome, e-mail, telefone e tipo de necessidade (física, mental ou ambas)
-- O e-mail deve ser único no sistema
+- O usuário informa nome, e-mail, telefone e senha
+- O usuário escolhe se é cliente ou paciente
 - A senha deve ter no mínimo 8 caracteres
-- Após o cadastro, o usuário recebe um e-mail de confirmação
+- O e-mail deve ser único no sistema
+- O sistema exibe mensagem de sucesso após o cadastro
 
 ---
 
-### HU002: Cadastro de profissional parceiro
+### HU002: Login
 
-**Como** profissional de saúde ou educação física,
-**quero** me cadastrar como parceiro da empresa,
-**para** poder atender clientes e pacientes encaminhados.
-
-**Critérios de aceitação:**
-
-- O sistema solicita nome, especialidade, registro profissional (CRM, CREF, CRP etc.) e contato
-- O cadastro só é ativado após aprovação de um funcionário responsável
-- O profissional recebe notificação sobre a aprovação ou recusa
-
----
-
-### HU003: Login
-
-**Como** usuário cadastrado (funcionário, profissional, cliente ou paciente),
-**quero** fazer login com e-mail e senha,
-**para** acessar minha área na plataforma.
+**Como** usuário cadastrado,  
+**quero** fazer login com e-mail e senha,  
+**para** acessar minha conta e acompanhar minhas solicitações.
 
 **Critérios de aceitação:**
 
 - O sistema valida e-mail e senha
 - Em caso de erro, exibe mensagem genérica (sem informar qual campo está errado)
-- Cada tipo de usuário é redirecionado para sua respectiva área após o login
+- Após login bem-sucedido, o usuário é redirecionado para a página inicial da sua área
+- A sessão é mantida até o logout explícito
 
 ---
 
-## Contato e Encaminhamento
+### HU003: Logout
 
-### HU004: Solicitar ajuda pelo site
-
-**Como** cliente ou paciente,
-**quero** preencher um formulário de contato descrevendo minha necessidade,
-**para** ser encaminhado ao profissional adequado.
+**Como** usuário logado,  
+**quero** fazer logout,  
+**para** sair da minha conta com segurança.
 
 **Critérios de aceitação:**
 
-- O formulário pede nome, contato, área desejada (física ou mental) e uma breve descrição
-- Após o envio, o cliente recebe uma confirmação de que o pedido foi registrado
-- O pedido fica visível para os funcionários responsáveis pelo encaminhamento
+- O botão de logout está acessível em qualquer página após login
+- Após logout, a sessão é encerrada
+- O usuário é redirecionado para a tela de login
 
 ---
 
-### HU005: Ver lista de profissionais por especialidade
+### HU004: Login de funcionário
 
-**Como** cliente ou paciente,
-**quero** visualizar os profissionais disponíveis organizados por área,
-**para** escolher com quem entrar em contato.
+**Como** funcionário da empresa,  
+**quero** acessar uma área exclusiva de atendimento,  
+**para** gerenciar os pedidos de clientes e pacientes.
 
 **Critérios de aceitação:**
 
-- O site exibe os profissionais agrupados por especialidade (ex: nutrição, psicologia, educação física)
-- Cada profissional mostra nome, especialidade e link de contato (WhatsApp, e-mail ou telefone)
-- Apenas profissionais aprovados aparecem na lista
+- Contas de funcionário são criadas apenas por um administrador
+- Funcionários acessam um painel que clientes e pacientes não conseguem ver
+- Em caso de erro no login, exibe mensagem genérica
 
 ---
 
-### HU006: Encaminhar pedido a um profissional
+## Solicitação de Ajuda
 
-**Como** funcionário,
-**quero** direcionar um pedido de cliente ou paciente ao profissional mais adequado,
-**para** garantir que ele seja atendido corretamente.
+### HU005: Solicitar ajuda ou serviço
+
+**Como** cliente ou paciente,  
+**quero** enviar um pedido de ajuda pelo site,  
+**para** ser direcionado ao profissional adequado.
 
 **Critérios de aceitação:**
 
-- O funcionário visualiza a lista de pedidos pendentes
-- O funcionário escolhe um profissional compatível com a necessidade descrita
-- O profissional e o cliente/paciente são notificados do encaminhamento
+- O usuário seleciona a área do pedido (ex: saúde física, saúde mental, educação física)
+- O usuário descreve a necessidade em um campo de texto (máx. 1.000 caracteres)
+- O pedido não pode ser enviado com a descrição vazia
+- O sistema exibe mensagem de confirmação após o envio
+- O pedido fica registrado com data e hora
 
 ---
 
-## Área do Funcionário
+### HU006: Acompanhar status do pedido
 
-### HU007: Painel de pedidos pendentes
-
-**Como** funcionário,
-**quero** ver todos os pedidos de ajuda ainda não encaminhados,
-**para** organizar o atendimento de forma profissional.
+**Como** cliente ou paciente,  
+**quero** ver o andamento dos meus pedidos,  
+**para** saber se já estou sendo atendido.
 
 **Critérios de aceitação:**
 
-- Os pedidos aparecem ordenados do mais antigo para o mais recente
-- Cada pedido mostra nome do solicitante, área desejada e descrição
-- O funcionário pode marcar um pedido como "em andamento" ou "encaminhado"
+- A lista mostra todos os pedidos do usuário, do mais recente para o mais antigo
+- Cada pedido exibe a área, a data e o status (Recebido, Em atendimento, Concluído)
+- O usuário só vê os próprios pedidos
 
 ---
 
-### HU008: Aprovar cadastro de profissional
+### HU007: Cancelar pedido
 
-**Como** funcionário responsável,
-**quero** analisar e aprovar ou recusar o cadastro de novos profissionais,
-**para** garantir que apenas profissionais qualificados atendam pela plataforma.
+**Como** cliente ou paciente,  
+**quero** cancelar um pedido que ainda não foi atendido,  
+**para** desistir da solicitação quando não precisar mais.
 
 **Critérios de aceitação:**
 
-- O funcionário visualiza os dados e o registro profissional enviado
-- Ao aprovar, o profissional passa a aparecer na lista pública de contatos
-- Ao recusar, o sistema exige um motivo, enviado ao profissional
+- Só é possível cancelar pedidos com status "Recebido"
+- O sistema pede confirmação antes de cancelar
+- Após o cancelamento, o status do pedido muda para "Cancelado"
+
+---
+
+## Profissionais
+
+### HU008: Ver profissionais por área
+
+**Como** cliente ou paciente,  
+**quero** ver a lista de profissionais de cada área especializada,  
+**para** escolher quem pode me ajudar.
+
+**Critérios de aceitação:**
+
+- A lista pode ser filtrada por área (médicos, profissionais de educação física, etc.)
+- Cada profissional exibe nome, área de atuação e foto
+- A lista é acessível sem necessidade de login
+
+---
+
+### HU009: Acessar link de contato do profissional
+
+**Como** cliente ou paciente,  
+**quero** acessar o link de contato de um profissional,  
+**para** falar diretamente com ele.
+
+**Critérios de aceitação:**
+
+- Cada profissional possui um link de contato visível no seu card
+- O link abre em uma nova aba
+- Se o profissional não tiver link cadastrado, o card exibe a mensagem "Contato indisponível"
+
+---
+
+### HU010: Cadastrar profissional
+
+**Como** funcionário,  
+**quero** cadastrar um novo profissional parceiro,  
+**para** que ele apareça na lista do site.
+
+**Critérios de aceitação:**
+
+- O funcionário informa nome, área de atuação, foto e link de contato
+- Nome e área são obrigatórios
+- O profissional cadastrado aparece imediatamente na lista pública
+
+---
+
+### HU011: Editar e remover profissional
+
+**Como** funcionário,  
+**quero** editar ou remover um profissional da lista,  
+**para** manter as informações sempre atualizadas.
+
+**Critérios de aceitação:**
+
+- Apenas funcionários podem editar ou remover profissionais
+- O sistema pede confirmação antes de remover
+- As alterações aparecem imediatamente na lista pública
+
+---
+
+## Atendimento (Funcionários)
+
+### HU012: Ver pedidos recebidos
+
+**Como** funcionário,  
+**quero** ver todos os pedidos de clientes e pacientes,  
+**para** atendê-los de forma profissional.
+
+**Critérios de aceitação:**
+
+- A lista mostra pedidos do mais antigo para o mais recente, priorizando os ainda não atendidos
+- Cada pedido exibe nome do solicitante, área, descrição, data e status
+- A lista pode ser filtrada por status e por área
+- A lista é paginada (20 pedidos por página)
+
+---
+
+### HU013: Direcionar pedido ao profissional
+
+**Como** funcionário,  
+**quero** direcionar um pedido ao profissional da área correspondente,  
+**para** que o cliente ou paciente receba o atendimento adequado.
+
+**Critérios de aceitação:**
+
+- O funcionário seleciona um profissional da mesma área do pedido
+- Após o direcionamento, o status muda para "Em atendimento"
+- O solicitante consegue ver o profissional responsável no seu pedido
+
+---
+
+### HU014: Concluir pedido
+
+**Como** funcionário,  
+**quero** marcar um pedido como concluído,  
+**para** registrar que o cliente ou paciente foi atendido.
+
+**Critérios de aceitação:**
+
+- Apenas funcionários podem concluir pedidos
+- Apenas pedidos "Em atendimento" podem ser concluídos
+- O status muda para "Concluído" e o solicitante vê a atualização
 
 ---
 
 ## Parcerias
 
-### HU009: Cadastrar parceria com prefeitura ou academia
+### HU015: Ver parceiros da empresa
 
-**Como** funcionário administrativo,
-**quero** registrar uma nova parceria firmada,
-**para** manter o controle de quem pode encaminhar ou receber pacientes parceiros.
-
-**Critérios de aceitação:**
-
-- O sistema solicita nome da instituição parceira, tipo (prefeitura ou academia) e contato responsável
-- A parceria fica registrada com data de início
-- Pedidos vindos de uma parceria são identificados como tal no painel de pedidos
-
----
-
-### HU010: Listar parcerias ativas
-
-**Como** funcionário,
-**quero** visualizar todas as parcerias ativas da empresa,
-**para** acompanhar quais instituições estão colaborando no momento.
+**Como** cliente ou paciente,  
+**quero** ver as prefeituras e academias parceiras,  
+**para** saber onde posso conseguir ajuda.
 
 **Critérios de aceitação:**
 
-- A lista exibe nome, tipo e status (ativa ou encerrada) de cada parceria
-- É possível filtrar por tipo de parceria (prefeitura ou academia)
-
----
-
-## Site Institucional
-
-### HU011: Página de apresentação da empresa
-
-**Como** visitante do site,
-**quero** entender o que a Corporação Torres oferece,
-**para** decidir se quero solicitar ajuda ou contato.
-
-**Critérios de aceitação:**
-
-- A página apresenta a missão da empresa e os tipos de ajuda oferecidos (física e mental)
-- A página exibe um botão de destaque para "Solicitar ajuda" ou "Entrar em contato"
+- A página exibe a lista de parceiros com nome, tipo (prefeitura ou academia) e descrição
+- A lista pode ser filtrada por tipo
 - A página é acessível sem necessidade de login
 
 ---
 
-### HU012: Contato institucional
+### HU016: Gerenciar parceiros
 
-**Como** visitante do site,
-**quero** encontrar os canais de contato da empresa,
-**para** falar diretamente com a Corporação Torres.
+**Como** funcionário,  
+**quero** cadastrar, editar e remover parceiros,  
+**para** manter a página de parcerias atualizada.
 
 **Critérios de aceitação:**
 
-- O site exibe WhatsApp Business, e-mail institucional e formulário de contato
-- Todos os canais estão visíveis na mesma seção de contato
-- O formulário envia a mensagem para o e-mail institucional da empresa
+- O funcionário informa nome, tipo e descrição do parceiro
+- Apenas funcionários podem gerenciar parceiros
+- O sistema pede confirmação antes de remover
+- As alterações aparecem imediatamente na página pública
+
+---
+
+## Informações da Empresa
+
+### HU017: Conhecer a empresa
+
+**Como** visitante do site,  
+**quero** ler sobre a proposta e o impacto da Corporação Torres,  
+**para** entender como a empresa pode me ajudar.
+
+**Critérios de aceitação:**
+
+- A página inicial apresenta a proposta da empresa
+- A página explica para quem a empresa atende (funcionários, pacientes e clientes)
+- Há um botão de destaque para "Solicitar ajuda"
+- A página é acessível sem necessidade de login
